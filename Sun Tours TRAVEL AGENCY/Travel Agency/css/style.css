@@ -1,0 +1,256 @@
+
+/* css comment */
+/* universal selector * affects everything on the page */
+
+
+   
+  
+* {
+    margin: 0;
+    padding:0;
+}
+
+    
+    
+
+body{
+
+    font-family:  Arial,  Helvetica, sans-serif;
+    font-size: 20px;
+    background-color:#9de7ee;
+   
+
+    
+}
+header ,footer {
+    background-color: #3d575a;
+    padding: 1em;
+    /* margin-bottom: 1em; */
+    margin-bottom:1em;
+    text-align :center;
+    color:#fff;
+}
+/* specifity */
+ header h1{
+    color:rgb(248, 248, 252)
+    font-size:72px;
+    text-transform: capitalize;
+}
+h3{
+    color:rgb(19, 137, 210)
+    
+}
+/* specifity */
+ header h2 {
+    color: #ddd
+}
+nav {
+    background-color: #ddd;
+    padding: 1rem;
+    text-align: left;
+} 
+
+
+
+h1 {
+    color:#fff;
+    font-size: 72px;
+    text-transform: cap;
+}
+article {
+    width:100%;
+    max-width: 1000px;
+    margin:0 auto;
+   
+}
+article h2 {
+    text-transform: uppercase;
+    text-align: center;
+}
+span {
+
+}
+img {
+    width:100%
+}
+p, img{
+    margin_bottom: 1em;
+    line-height :1.3em;
+}
+footer {
+   background-color: #3d575a; 
+   padding: 10rem;
+}
+
+* {
+    box-sizing: border-box;
+} 
+ /* ======= Mobile First ======== */
+ body {
+    font-size: 18px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+ }
+ figure {
+    margin: 0  0.3em;
+ }
+ img {
+    width: 100%;
+ }
+ .parent {
+    display: flex;
+    flex-flow: row wrap;
+ }
+
+
+ /* =======  TABLET SIZE INHERITS FROM MOBILE ========== */
+  @media screen and (min-width:600px) {
+    .parent {
+        flex-flow: row wrap:
+        
+    }
+    figure {
+        width:calc(50% -.6em);
+        margin: .3em;
+    }
+    .columns {
+        column-count: 2;
+        margin: .3em;
+    }
+  }
+
+/* ======= DESKTOP SIZE INHERITS FROM MOBILE AND TABLET =========== */
+  @media screen and (min-width: 980px) {
+    figure {
+
+        width: calc(25% - .6em);
+    }
+    .columns {
+        column-count: 4;
+    }
+  }
+ 
+ footer {
+    text-align:center;
+    margin :justify;
+ } 
+ h4 { color: #0ba0eb;
+    font-size: 40px;
+
+  
+ }
+ @import url( 'https://fonts.googleapis.com/css2?family=0swald:wght@700&display=swap');
+ * {margin:0; padding: 0; box-sizing: border-box;}
+    
+ html {
+  /* scroll-behavior: smooth; */
+  overscroll-behavior: none;
+ }
+ /* ==== DESKTOP FIRST ===== */
+ section.container {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position:relative;
+ }
+    
+ video.bgvid {
+
+  position: fixed;
+  left:50%;
+  top:50%;
+  transform: translate(-50%,-50%);
+  min-width: 100%;
+  min:height 100%;
+  width:auto;
+  height: auto;
+  z-index: -1;
+  /* background: url("../images/sunset.jpg")  no-reoeat center center;
+  background-size: cover */
+  
+ }
+    
+ 
+ hgroup h1 {
+  font-family: 'oswal', sans-serif;
+  font-weight: 700;
+  font-size: 15vmax;
+  letter-spacing: -.5vmax;
+  line-height: 15vmax;
+  color:#fff;
+  text-align: center;
+  text-transform: uppercase;
+ }
+
+  
+  
+ article.multi {
+  background-color: #fff;
+  padding: 4vmax;
+  column-count: 3;
+  column-gap: 20px;
+ }
+
+
+
+ article h1 {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 700;
+  font-size: 2.5vmax;
+  text-transform: uppercase;
+  
+}
+
+article p {
+  font-family: Gothem,Arial, Helvetica, sans-serif;
+  color:#333;
+  font-size: 18px;
+  line-height: 26px;
+  margin: bottom 20px;
+  
+}
+video.smvid {
+  ....width: 100%;
+}
+
+
+section.container  {
+  background: url(../images/sunset.jpg) no-repeat center center;
+  background-size: cover;
+}
+
+  /* ===TABLET LAYOUT INHERITS FROM DESKTOP 600PX 980PX === */
+
+  @media only screen and (max-width: 980px) { 
+    article.multi  {
+      column-count: 2;
+    }
+    article h1 {
+      font-size: 3vmax;
+    }
+  }
+ 
+
+
+  /* === MOBILE LAYOUT INHERITS FROM DESKTOP AND THE TABLET 600PX === */
+  @media  only screen and (max-width: 600px) {
+    
+    article.multi {
+      column-count: 1;
+    }
+    video.bgvid {
+      display: none;
+    }
+    section.container {
+      background: url(../images/travel3.jpg);no-repeat center center;
+    }
+  }
+
+footer {
+  background-color:#0ba0eb;
+  padding: 1em;
+  text-align: center;
+}
+
